@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1편 합동 탐정 — 5학년 수학 AI 수업 꾸러미</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1c;--muted:#666;--card:#f6f6f6;--accent:#2b6cb0}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--muted:#aaa;--card:#1e1e1e;--accent:#7fb3ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:32px 16px}
+h1{font-size:1.6rem;margin:0 0 4px}
+h2{font-size:1.15rem;margin:32px 0 12px}
+p.sub{color:var(--muted);margin:0 0 24px}
+a{color:var(--accent)}
+nav.back{margin:0 0 16px;font-size:.9rem}
+nav.back a{text-decoration:none}
+.info{background:var(--card);border-radius:12px;padding:16px;margin:0 0 8px}
+.info p{margin:0}
+.info ol{margin:8px 0 0;padding-left:1.4em}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:520px}
+th,td{border-bottom:1px solid var(--card);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+td:first-child{white-space:nowrap}
+ul.dl{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+ul.dl li{background:var(--card);border-radius:12px;padding:16px}
+ul.dl a{font-weight:600;text-decoration:none}
+ul.dl span{display:block;color:var(--muted);font-size:.85rem}
+.card{background:var(--card);border-radius:12px;padding:16px;margin-bottom:12px}
+.card h3{font-size:1rem;margin:0 0 8px}
+pre{margin:0;white-space:pre-wrap;word-break:keep-all;font-family:inherit;font-size:.95rem;background:var(--bg);border-radius:8px;padding:12px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+@media (max-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+figure{margin:0;background:var(--card);border-radius:12px;padding:8px;text-align:center}
+figure img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;display:block;border-radius:8px;background:#fff}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:4px}
+footer{margin-top:40px;color:var(--muted);font-size:.85rem}
+footer p{margin:0 0 8px}
+</style>
+</head>
+<body>
+<main>
+<nav class="back"><a href="../">← 5학년 수학 AI 수업 꾸러미</a></nav>
+<h1>1편 · 합동 탐정 — 완전히 포개지는 짝을 찾아라</h1>
+<p class="sub">비상 수학 5-2 3단원 합동과 대칭 · 도형의 합동 · 40분 · 2026-10-19 게시</p>
+
+<div class="info">
+<p><strong>학습 목표</strong></p>
+<ol>
+<li>모양과 크기가 같아 포개었을 때 완전히 겹치는 두 도형을 <strong>합동</strong>이라 부를 수 있다.</li>
+<li>생활 장면과 그림에서 합동인 도형을 찾고, 합동이 <strong>아닌</strong> 이유를 말할 수 있다.</li>
+</ol>
+</div>
+
+<h2>설계 의도</h2>
+<p>합동은 "모양과 크기가 같다"는 정의를 외우면 쉬워 보이지만, 아이들은 크기만 다른 닮은 도형과 뒤집어 놓은 도형에서 자주 흔들립니다. 그래서 정의를 먼저 주지 않고, 비상 AIDT에서 도형을 끌어 포개 보는 몸의 감각으로 합동을 발견하게 했습니다.</p>
+<p>그다음 일부러 헷갈리게 만든 그림 10장에서 "이건 왜 합동이 아니지?"를 크기와 모양이라는 말로 설명하게 합니다. 여기서 AI는 정답을 주는 도구가 아니라 문제를 만들어 주는 상대입니다. AI가 '같다'고 해 놓고 다르게 그린 그림도 버리지 않고 함정 카드로 씁니다.</p>
+<p>그림 10장은 꾸러미에 들어 있고, 더 만들고 싶으면 교사가 제미나이로 추가 세트를 만듭니다. 학생은 AI 계정이 필요 없고, 개인정보도 수집하지 않습니다.</p>
+
+<h2>40분 흐름</h2>
+<div class="scroll">
+<table>
+<tr><th>분</th><th>단계</th><th>교사</th><th>학생</th><th>자료</th></tr>
+<tr><td>0~5</td><td>도입 '쌍둥이 찾기'</td><td>똑같아 보이는 그림 두 장을 띄우고 "완전히 똑같은가?" 투표. 한 장은 살짝 작게, 한 장은 뒤집혀 있음</td><td>손들기 투표, 이유 한 마디</td><td>덱</td></tr>
+<tr><td>5~15</td><td>개념 AIDT 포개 보기</td><td>도형을 끌어 포개는 조작 활동 → "완전히 겹친다"를 합동이라 명명. 뒤집어서 겹쳐도 합동임을 조작으로 확인</td><td>도형 이동·회전·뒤집기, 겹침 확인</td><td>비상 AIDT</td></tr>
+<tr><td>15~35</td><td>활동 합동 탐정 (모둠)</td><td>그림 10장. 1단계 합동인 쌍에 ○, 2단계 아닌 쌍은 이유 쓰기(크기 / 모양 / 둘 다), 3단계 "AI가 만든 그림 중 함정은 몇 번?" 모둠 발표</td><td>탐정 활동지, 트레이싱지로 포개 확인</td><td>활동지, 트레이싱지</td></tr>
+<tr><td>35~40</td><td>정리 AIDT 평가 + 한 줄</td><td>AIDT 형성평가 2~3문항. "합동은 ___와 ___가 같아서 포개면 완전히 겹치는 것" 빈칸 채우기</td><td>개별 평가, 한 줄 정리</td><td>AIDT, 덱</td></tr>
+</table>
+</div>
+
+<h2>내려받기</h2>
+<ul class="dl">
+<li><a href="deck.pptx">수업 덱 (PPTX)</a><span>12장 · 고쳐 쓰기용</span></li>
+<li><a href="deck.pdf">수업 덱 (PDF)</a><span>12장 · 바로 띄우기용</span></li>
+<li><a href="worksheet.pdf">활동지 (PDF)</a><span>A4 앞뒤 · 모둠당 1장</span></li>
+<li><a href="teacher.pdf">교사용 흐름 (PDF)</a><span>흐름표 · 정답표 · 프롬프트</span></li>
+</ul>
+
+<h2>프롬프트 카드 (교사용 · 제미나이 이미지 생성)</h2>
+<p>기본 그림 세트(img 01~10)는 꾸러미에 포함되어 있고, 아래 프롬프트는 추가 세트를 만들 때 씁니다. 1·4·5 유형 5장과 2·3 유형 5장을 섞어 번호만 붙입니다.</p>
+<div class="card"><h3>1. 합동 쌍</h3><pre>흰 배경에 단순한 평면 도형(삼각형·사각형·오각형 중 하나) 두 개. 두 도형은 모양과 크기가 완전히 같고, 하나는 180도 회전해 놓았다. 선 굵기 같은 색 두 가지. 글자 없음.</pre></div>
+<div class="card"><h3>2. 함정 A (크기만 다름)</h3><pre>...두 도형은 모양이 같지만 하나가 1.3배 크다...</pre></div>
+<div class="card"><h3>3. 함정 B (모양이 조금 다름)</h3><pre>...두 사각형, 크기는 비슷하지만 한 각의 크기가 다르다...</pre></div>
+<div class="card"><h3>4. 함정 C (뒤집음 — 사실은 합동)</h3><pre>...하나는 좌우로 뒤집어 놓았다. 모양과 크기는 같다...</pre></div>
+<div class="card"><h3>5. 생활 장면</h3><pre>교실 바닥 타일, 창문 유리, 책꽂이의 같은 책 등 합동인 사물 쌍이 보이는 단순한 삽화. 사람 얼굴 없음.</pre></div>
+
+<h2>그림 10장</h2>
+<div class="grid">
+<figure><img src="img/01.png" alt="그림 01" loading="lazy"><figcaption>01</figcaption></figure>
+<figure><img src="img/02.png" alt="그림 02" loading="lazy"><figcaption>02</figcaption></figure>
+<figure><img src="img/03.png" alt="그림 03" loading="lazy"><figcaption>03</figcaption></figure>
+<figure><img src="img/04.png" alt="그림 04" loading="lazy"><figcaption>04</figcaption></figure>
+<figure><img src="img/05.png" alt="그림 05" loading="lazy"><figcaption>05</figcaption></figure>
+<figure><img src="img/06.png" alt="그림 06" loading="lazy"><figcaption>06</figcaption></figure>
+<figure><img src="img/07.png" alt="그림 07" loading="lazy"><figcaption>07</figcaption></figure>
+<figure><img src="img/08.png" alt="그림 08" loading="lazy"><figcaption>08</figcaption></figure>
+<figure><img src="img/09.png" alt="그림 09" loading="lazy"><figcaption>09</figcaption></figure>
+<figure><img src="img/10.png" alt="그림 10" loading="lazy"><figcaption>10</figcaption></figure>
+</div>
+
+<footer>
+<p>비상 AIDT가 없는 반은 AIDT 포개 보기 자리에 트레이싱지(종이 조작)를 넣으면 됩니다. 그림 10장 세트는 어느 출판사 교과서에도 붙습니다.</p>
+<p>학생 사진·개인정보 없음 · 수업용으로 자유롭게 활용하세요.</p>
+</footer>
+</main>
+</body>
+</html>
